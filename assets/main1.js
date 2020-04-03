@@ -51,27 +51,49 @@
 
 //ho voluto testare la gestione delle funzioni all'interno di altre funzioni (ognuna con i propri parametri di riferimento);
 
-var nomi = ["Michele" , "Fabio" , "Roberto"];
-var cognomi = ["Madeddu" , "Manca"  , "Nughes"];
-var esito = [];
-creaInvitati(esito , nomi , cognomi);
-console.log(esito);
+// var nomi = ["Michele" , "Fabio" , "Roberto"];
+// var cognomi = ["Madeddu" , "Manca"  , "Nughes"];
+// var esito = [];
+// creaInvitati(esito , nomi , cognomi);
+// console.log(esito);
+//
+// function creaInvitati(newVet , vetA , vetB){
+//
+//   for(var i = 0; i <= 4; i++){
+//
+//     x = creaNumero (0 , vetA.length);
+//     y = creaNumero (0 , vetB.length);
+//     newVet.push(vetA[x] + " " + vetB[y]);
+//
+//   }
+//
+//   return newVet;
+// }
+//
+// function creaNumero (max , min){
+//
+//   return Math.floor( Math.random() * ( max - min ) + min);
+//
+// }
 
-function creaInvitati(newVet , vetA , vetB){
+//
+// Snack Bonus (non visto insieme e quindi assolutamente facoltativo)
+// Crea un array di numeri interi, ad esempio (1, 4, 2, 15, 120, 17, 3) e fai la somma di tutti gli elementi che sono in posizione dispari. Prova prima senza funzione e poi con funzione.  **WITHOUT FUNCTION**
 
-  for(var i = 0; i <= 4; i++){
 
-    x = creaNumero (0 , vetA.length);
-    y = creaNumero (0 , vetB.length);
-    newVet.push(vetA[x] + " " + vetB[y]);
+var numeri = [1, 4, 2, 15, 120, 17, 3];
+var somma = 0;
+
+
+for(var i = 0; i < numeri.length; i ++){
+
+  if(i % 2 !== 0){
+
+    somma += numeri[i];
 
   }
 
-  return newVet;
-}
-
-function creaNumero (max , min){
-
-  return Math.floor( Math.random() * ( max - min ) + min);
 
 }
+
+console.log(somma);
