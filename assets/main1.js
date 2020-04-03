@@ -22,3 +22,27 @@ function parolaLunga(x , y){
    }
 
 }
+
+// Snack 2: Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+
+var num = parseInt(prompt("Inserisci un numero"));
+
+var esito = pariSuccessivo(num);
+console.log(esito);
+
+
+function pariSuccessivo(x){
+
+  if(x%2 == 0){
+
+    return "è pari: " + x;
+
+  }else{
+
+    return "è dispari: " + x + " Conversione: "+ (x+1);
+
+  }
+
+
+
+}
