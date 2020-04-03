@@ -81,19 +81,37 @@
 // Crea un array di numeri interi, ad esempio (1, 4, 2, 15, 120, 17, 3) e fai la somma di tutti gli elementi che sono in posizione dispari. Prova prima senza funzione e poi con funzione.  **WITHOUT FUNCTION**
 
 
+// var numeri = [1, 4, 2, 15, 120, 17, 3];
+// var somma = 0;
+//
+//
+// for(var i = 0; i < numeri.length; i ++){
+//
+//   if(i % 2 !== 0){
+//
+//     somma += numeri[i];
+//
+//   }
+// }
+// console.log(somma);
+
+
+// Snack bonus **WITH FUNCTION**
+
 var numeri = [1, 4, 2, 15, 120, 17, 3];
-var somma = 0;
-
-
-for(var i = 0; i < numeri.length; i ++){
-
-  if(i % 2 !== 0){
-
-    somma += numeri[i];
-
-  }
-
-
-}
-
+var somma = sommaIndiceDispari(numeri);
 console.log(somma);
+
+function sommaIndiceDispari(vet){
+
+  x = 0;
+  for(var i = 0; i < vet.length; i ++){
+
+    if(i % 2 !== 0){
+
+      x += vet[i];
+
+    }
+  }
+  return x;
+}
